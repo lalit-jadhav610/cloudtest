@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.clouds</groupId>
+	<artifactId>clouds-druid</artifactId>
+	<version>0.0.1</version>
+	<name>clouds-druid</name>
+	<description>Project for Apache DRUID Java implementation.. </description>
+
+	<properties>
+		<!-- Version Listings.. -->
+		<elasticsearch.version>7.6.2</elasticsearch.version>
+	</properties>
+
+	<dependencies>
+
+		<!-- Apache Druid Start -->
+
+		<!-- <dependency> -->
+		<!--<groupId>in.zapr.druid</groupId> -->
+		<!--<artifactId>druidry</artifactId> -->
+		<!--<version>2.6</version> -->
+		<!--</dependency> -->
+
+		<!-- Apache Druid End -->
+
+		<!-- Elastic Search Start -->
+
+		<dependency>
+			<groupId>org.elasticsearch</groupId>
+			<artifactId>elasticsearch</artifactId>
+			<version>${elasticsearch.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.elasticsearch.client</groupId>
+			<artifactId>elasticsearch-rest-client</artifactId>
+			<version>${elasticsearch.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.elasticsearch.client</groupId>
+			<artifactId>transport</artifactId>
+			<version>${elasticsearch.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.elasticsearch.client</groupId>
+			<artifactId>elasticsearch-rest-high-level-client</artifactId>
+			<version>${elasticsearch.version}</version>
+		</dependency>
+
+
+		<!-- Elastic Search End -->
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
