@@ -10,7 +10,7 @@
 
 	<properties>
 		<!-- Version Listings.. -->
-		<elasticsearch.version>7.6.2</elasticsearch.version>
+		<elasticsearch.version>7.13.3</elasticsearch.version>
 	</properties>
 
 	<dependencies>
